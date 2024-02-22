@@ -5,3 +5,6 @@
 .comp-leftbar .title{
     font-size: 3em;
 }
+.comp-leftbar{
+    width: 440px;
+}

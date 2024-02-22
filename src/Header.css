@@ -1,6 +1,15 @@
 .comp-header {
     padding: 24px;
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid #18191A;
+}
+.comp-header .logo{
+    height: 34px;
+    width: fit-content;
+}
+.comp-header .logo img{
+    height: 100%;
 }
 
 .comp-header .icon-button {

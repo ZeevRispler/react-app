@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Search from './Search';
+import History from './History';
 import "./Leftbar.css";
 
 const Leftbar = (props) => {
@@ -11,6 +12,7 @@ const Leftbar = (props) => {
             <Header />
             <div className="inner">
                 <Search />
+                <History history={["Trying to Help with Something", "A Question about Timing", "Drink More Water"]} />
             </div>
             <Footer />
         </div>

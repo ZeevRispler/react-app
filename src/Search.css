@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100% - 32px);
+    width: calc(100% - 16px);
     padding-right: 16px;
     background-color: var(--search-bg-color);
     color: var(--search-text-color);

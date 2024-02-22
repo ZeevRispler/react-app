@@ -1,0 +1,7 @@
+.comp-rightbar{
+    background-color: var(--rightbar-bg-color);
+    color: var(--text-color);
+}
+.comp-rightbar .title{
+    font-size: 3em;
+}

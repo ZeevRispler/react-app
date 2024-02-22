@@ -1,0 +1,11 @@
+.comp-chat{
+    color: var(text-color);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.comp-chat .title{
+    font-size: 3em;
+}

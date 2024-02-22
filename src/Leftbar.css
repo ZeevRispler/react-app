@@ -1,0 +1,7 @@
+.comp-leftbar{
+    background-color: var(--leftbar-bg-color);
+    color: var(--leftbar-text-color);
+}
+.comp-leftbar .title{
+    font-size: 3em;
+}

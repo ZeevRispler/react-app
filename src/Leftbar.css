@@ -2,10 +2,13 @@
     background-color: var(--leftbar-bg-color);
     color: var(--leftbar-text-color);
     width: 440px;
+    display: flex;
+    flex-direction: column;
 }
 .comp-leftbar .title{
     font-size: 3em;
 }
 .comp-leftbar .inner{
     padding: 16px 24px;
+    flex-grow: 1;
 }

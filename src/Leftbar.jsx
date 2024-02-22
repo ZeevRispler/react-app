@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import React from 'react';
 import Header from './Header';
+import Footer from './Footer';
 import Search from './Search';
 import "./Leftbar.css";
 
@@ -11,7 +12,7 @@ const Leftbar = (props) => {
             <div className="inner">
                 <Search />
             </div>
-            <div className='title'>History</div>
+            <Footer />
         </div>
     )
 };

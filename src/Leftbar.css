@@ -1,10 +1,11 @@
 .comp-leftbar{
     background-color: var(--leftbar-bg-color);
     color: var(--leftbar-text-color);
+    width: 440px;
 }
 .comp-leftbar .title{
     font-size: 3em;
 }
-.comp-leftbar{
-    width: 440px;
+.comp-leftbar .inner{
+    padding: 16px 24px;
 }

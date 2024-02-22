@@ -8,7 +8,9 @@ const Leftbar = (props) => {
     return (
         <div className='comp-leftbar'>
             <Header />
-            <Search />
+            <div className="inner">
+                <Search />
+            </div>
             <div className='title'>History</div>
         </div>
     )

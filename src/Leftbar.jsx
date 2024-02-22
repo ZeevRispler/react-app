@@ -12,7 +12,9 @@ const Leftbar = (props) => {
             <Header />
             <div className="inner">
                 <Search />
-                <History summary="Last 30 days" history={["Trying to Help with Something", "A Question about Timing", "Drink More Water"]} />
+                <History summary="Last 30 days" history={["Trying to Help with Something", "A Question about Timing", "Drink More Water", "Trying to Help with Something", "A Question about Timing"]} />
+                <History summary="January 2024" history={["Drink More Water", "Trying to Help with Something", "A Question about Timing", "Drink More Water", "Trying to Help with Something", "A Question about Timing", "Drink More Water"]} />
+                <History summary="December 2023" history={["Trying to Help with Something", "A Question about Timing", "Drink More Water", "Trying to Help with Something", "A Question about Timing"]} />
             </div>
             <Footer />
         </div>

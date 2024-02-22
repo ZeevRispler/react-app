@@ -6,11 +6,13 @@ const History = (props) => {
     const histories = props.history;
     return (
         <div className='comp-history'>
-            <details>
+            <details open>
                 <summary>{props.summary}</summary>
-                {histories.map((history) => (
-                    <button>{history}</button>
-                ))}
+                <div className="inner-flex">
+                    {histories.map((history) => (
+                        <button>{history}</button>
+                    ))}
+                </div>
             </details>
         </div>
     )

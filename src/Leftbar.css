@@ -11,4 +11,7 @@
 .comp-leftbar .inner{
     padding: 16px 24px;
     flex-grow: 1;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
 }

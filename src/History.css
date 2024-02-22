@@ -1,0 +1,27 @@
+.comp-history .inner-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.comp-history .inner-flex button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    color: var(--leftbar-text-color);
+    font-size: var(--text-size-15);
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+.comp-history .inner-flex button:hover{
+    background-color: var(--history-hover-color);
+}
+
+.comp-history summary{
+    font-size: var(--text-size-12);
+    padding: 10px 0;
+    cursor: pointer;
+}

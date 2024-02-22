@@ -8,6 +8,8 @@
     --search-bg-color: #1E1F21;
     --search-text-color: #94A3B8;
     --button-bg-color: #0066F3;
+    --button-bg-hover-color: #0054c9;
+    --button-bg-pressed-color: #0045a4;
     --text-size-number: 0.0625rem;
 
     --text-size-12: calc(var(--text-size-number) * 12);

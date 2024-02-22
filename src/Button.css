@@ -8,4 +8,15 @@
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: var(--text-size-16);
+    cursor: pointer;
+}
+.comp-button:hover{
+    background-color: var(--button-bg-hover-color);
+}
+.comp-button:active{
+    background-color: var(--button-bg-pressed-color);
+}
+.comp-button:focus-visible{
+    background-color: var(--button-bg-hover-color);
+    outline: 1px solid var(--leftbar-text-color);
 }

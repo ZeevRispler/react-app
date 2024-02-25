@@ -5,7 +5,9 @@ import "./Message.css";
 const Message = (props) => {
     return (
         <div className='comp-message'>
-            <input type='text' placeholder='Send message...' />
+            <div className="input">
+                <input type='text' placeholder='Send message...' />
+            </div>
         </div>
     )
 };

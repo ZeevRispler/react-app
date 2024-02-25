@@ -3,15 +3,15 @@
     gap: 8px;
     align-items: flex-end;
     flex-direction: row-reverse;
-    margin-left: 80px;
+    margin-left: 90px;
     margin-right: 40px;
-    width: calc(100% - 120px);
+    width: calc(100% - 130px);
 }
 
 .comp-bubble.true {
     flex-direction: row;
     margin-left: 40px;
-    margin-right: 80px;
+    margin-right: 90px;
 }
 
 .comp-bubble .inner-bubble {

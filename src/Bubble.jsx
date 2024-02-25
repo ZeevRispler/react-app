@@ -4,7 +4,11 @@ import "./Bubble.css";
 
 const Bubble = (props) => {
     return (
-        <div className='comp-bubble'>
+        <div className={'comp-bubble ' + props.bot}>
+            {props.bot
+                ? <button>BOT</button>
+                : <button>NO</button>
+            }
             <p>{props.content}</p>
         </div>
     )

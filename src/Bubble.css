@@ -1,3 +1,10 @@
 .comp-bubble{
     display: flex;
+    background-color: var(--button-bg-color);
+    color: var(--leftbar-text-color);
+}
+
+.comp-bubble.true{
+    background-color: var(--bot-bubble-bg-color);
+    color: var(--text-color);
 }

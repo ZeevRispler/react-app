@@ -12,6 +12,7 @@
     --button-bg-pressed-color: #0045a4;
     --history-hover-color: #494f55;
     --history-pressed-color: #3F4348;
+    --bot-bubble-bg-color: #E7E7E7;
     --text-size-number: 0.0625rem;
 
     --text-size-12: calc(var(--text-size-number) * 12);

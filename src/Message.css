@@ -1,7 +1,8 @@
 .comp-message {
     padding: 24px 40px;
     position: sticky;
-    bottom: 0px;
+    top: calc(100vh - 40px);
+    /* bottom: 0px; */
     width: calc(100% - 80px);
 }
 

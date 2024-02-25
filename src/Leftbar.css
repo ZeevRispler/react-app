@@ -1,7 +1,7 @@
 .comp-leftbar{
     background-color: var(--leftbar-bg-color);
     color: var(--leftbar-text-color);
-    width: 400px;
+    min-width: 400px;
     display: flex;
     flex-direction: column;
 }

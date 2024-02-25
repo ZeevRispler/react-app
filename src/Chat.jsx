@@ -10,11 +10,7 @@ const Chat = (props) => {
             <Bubble content="Hello, Can I get some help?" />
             <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure. Exercitationem magnam beatae adipisci perferendis? Explicabo modi, expedita similique non tempore libero illum." bot />
             <Bubble content="Hello, Can I get some help?" />
-            <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure. Exercitationem magnam beatae adipisci perferendis? Explicabo modi, expedita similique non tempore libero illum." bot />
-            <Bubble content="Hello, Can I get some help?" />
-            <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure. Exercitationem magnam beatae adipisci perferendis? Explicabo modi, expedita similique non tempore libero illum." bot />
-            <Bubble content="Hello, Can I get some help?" />
-            <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure. Exercitationem magnam beatae adipisci perferendis? Explicabo modi, expedita similique non tempore libero illum." bot />
+            <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure." bot />
 
             <Message />
         </div>

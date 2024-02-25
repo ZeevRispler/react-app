@@ -53,3 +53,17 @@
     color: var(--search-text-color);
     font-size: var(--text-size-12);
 }
+
+.comp-bubble .help-text button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.comp-bubble .help-text button:hover{
+    background-color: var(--rightbar-bg-color);
+}
+.comp-bubble .help-text button:active{
+    background-color: var(--bot-bubble-bg-color);
+}

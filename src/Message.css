@@ -1,2 +1,9 @@
 .comp-message{
+    padding: 24px 40px;
+    position: sticky;
+    bottom: 32px;
+    width: calc(100% - 80px);
+}
+.comp-message input{
+    width: 100%;
 }

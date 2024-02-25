@@ -1,10 +1,44 @@
-.comp-bubble{
+.comp-bubble {
     display: flex;
-    background-color: var(--button-bg-color);
-    color: var(--leftbar-text-color);
+    gap: 8px;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    margin-left: calc(var(--text-size-16) * 4 + 8px);
+    margin-right: calc(var(--text-size-16) * 2);
 }
 
-.comp-bubble.true{
+.comp-bubble.true {
+    flex-direction: row;
+    margin-left: calc(var(--text-size-16) * 2);
+    margin-right: calc(var(--text-size-16) * 4 + 8px);
+}
+
+.comp-bubble .inner-bubble {
+    background-color: var(--button-bg-color);
+    color: var(--leftbar-text-color);
+    padding: 32px;
+    border-radius: 16px 16px 0 16px;
+}
+
+.comp-bubble.true .inner-bubble {
     background-color: var(--bot-bubble-bg-color);
+    color: var(--text-color);
+    border-radius: 16px 16px 16px 0;
+    font-size: var(--text-size-16);
+    line-height: 150%;
+}
+
+.comp-bubble svg {
+    width: calc(var(--text-size-16) * 4);
+    height: calc(var(--text-size-16) * 4);
+    padding: 8px;
+    border-radius: 9999px;
+    color: var(--text-color);
+    color: var(--button-bg-color);
+    background-color: var(--bot-bubble-bg-color);
+    height: fit-content;
+}
+
+.comp-bubble.true svg {
     color: var(--text-color);
 }

@@ -18,9 +18,15 @@
     font-weight: 500;
 }
 
+.comp-history .inner-flex button:focus-visible {
+    outline: 1px solid var(--history-hover-color);
+    outline-offset: 1px;
+}
+
 .comp-history .inner-flex button:hover {
     background-color: var(--history-hover-color);
 }
+
 .comp-history .inner-flex button:active {
     background-color: var(--history-pressed-color);
 }
@@ -37,6 +43,12 @@
     opacity: .4;
 }
 
+.comp-history summary:hover,
+.comp-history summary:focus-visible {
+    outline: none;
+    opacity: .3;
+}
+
 .comp-history summary::before {
     content: '';
     position: absolute;
@@ -50,6 +62,7 @@
     transform: rotate(-90deg);
     transition: transform 200ms ease-in-out 0s;
 }
-.comp-history details[open] summary::before{
+
+.comp-history details[open] summary::before {
     transform: rotate(0deg);
 }

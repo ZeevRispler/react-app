@@ -46,7 +46,7 @@
     color: var(--text-color);
 }
 
-.comp-bubble .help-text{
+.comp-bubble .help-text {
     position: absolute;
     right: 0;
     bottom: calc(var(--text-size-16) * -2);
@@ -54,16 +54,42 @@
     font-size: var(--text-size-12);
 }
 
-.comp-bubble .help-text button{
+.comp-bubble .help-text button {
     background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
     border-radius: 4px;
 }
-.comp-bubble .help-text button:hover{
+
+.comp-bubble .help-text button:hover {
     background-color: var(--rightbar-bg-color);
 }
-.comp-bubble .help-text button:active{
+
+.comp-bubble .help-text button:active {
     background-color: var(--bot-bubble-bg-color);
+}
+
+.comp-bubble .copy-icon {
+    background-color: var(--leftbar-text-color);
+    position: absolute;
+    border: 1px solid var(--bot-copyicon-border-color);
+    border-radius: 999px;
+    aspect-ratio: 1 / 1;
+    color: var(--history-hover-color);
+    top: 50%;
+    right: -48px;
+    transform: translateY(-50%);
+    display: none;
+}
+.comp-bubble.true:hover .copy-icon{
+    display: block;
+}
+
+.comp-bubble .copy-icon svg {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 4px;
+    width: 16px;
+    height: 16px;
 }

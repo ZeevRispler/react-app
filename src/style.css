@@ -13,7 +13,8 @@
     --history-hover-color: #494f55;
     --history-pressed-color: #3F4348;
     --bot-bubble-bg-color: #f4f5f8;
-    
+    --bot-copyicon-border-color: #E3E3E3;
+
     --text-size-number: 0.0625rem;
 
     --text-size-12: calc(var(--text-size-number) * 12);

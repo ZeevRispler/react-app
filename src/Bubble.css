@@ -3,20 +3,22 @@
     gap: 8px;
     align-items: flex-end;
     flex-direction: row-reverse;
-    margin-left: calc(var(--text-size-16) * 4 + 8px);
-    margin-right: calc(var(--text-size-16) * 2);
+    margin-left: 80px;
+    margin-right: 40px;
+    width: calc(100% - 120px);
 }
 
 .comp-bubble.true {
     flex-direction: row;
-    margin-left: calc(var(--text-size-16) * 2);
-    margin-right: calc(var(--text-size-16) * 4 + 8px);
+    margin-left: 40px;
+    margin-right: 80px;
 }
 
 .comp-bubble .inner-bubble {
     background-color: var(--button-bg-color);
     color: var(--leftbar-text-color);
     padding: 32px;
+    width: 100%;
     border-radius: 16px 16px 0 16px;
 }
 
@@ -29,8 +31,8 @@
 }
 
 .comp-bubble svg {
-    width: calc(var(--text-size-16) * 4);
-    height: calc(var(--text-size-16) * 4);
+    width: 32px;
+    height: 32px;
     padding: 8px;
     border-radius: 9999px;
     color: var(--text-color);

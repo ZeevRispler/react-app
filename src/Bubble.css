@@ -81,9 +81,14 @@
     right: -48px;
     transform: translateY(-50%);
     display: none;
+    cursor: pointer;
+}
+.comp-bubble.true .copy-icon{
+    display: block;
+    opacity: 0;
 }
 .comp-bubble.true:hover .copy-icon{
-    display: block;
+    opacity: 1;
 }
 
 .comp-bubble .copy-icon svg {

@@ -7,4 +7,44 @@
     margin-right: 40px;
     width: calc(100% - 180px);
     position: relative;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-right: 140px;
+    margin-top: -36px;
+}
+
+.comp-sources .inner-bubble {
+    padding: 32px;
+    width: 100%;
+    border-radius: 16px 16px 0 16px;
+    background-color: var(--bot-bubble-bg-color);
+    color: var(--text-color);
+    border-radius: 0 16px 16px 16px;
+    font-size: var(--text-size-16);
+    line-height: 150%;
+    margin-left: 50.5px;
+}
+
+.comp-sources .help-text {
+    position: absolute;
+    right: 0;
+    bottom: calc(var(--text-size-16) * -2);
+    color: var(--search-text-color);
+    font-size: var(--text-size-12);
+}
+
+.comp-sources .help-text button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.comp-sources .help-text button:hover {
+    background-color: var(--rightbar-bg-color);
+}
+
+.comp-sources .help-text button:active {
+    background-color: var(--bot-bubble-bg-color);
 }

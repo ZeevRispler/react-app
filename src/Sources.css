@@ -1,0 +1,10 @@
+.comp-sources {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    margin-left: 140px;
+    margin-right: 40px;
+    width: calc(100% - 180px);
+    position: relative;
+}

@@ -9,6 +9,8 @@
     position: relative;
     padding-bottom: 140px;
     position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .mobile-menu {
@@ -72,10 +74,5 @@
 @media screen and (max-width: 480px) {
     .mobile-menu {
         display: block;
-    }
-
-    .comp-chat {
-        overflow-y: auto;
-        overflow-x: hidden;
     }
 }

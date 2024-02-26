@@ -12,7 +12,7 @@ const Chat = (props) => {
             <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure. Exercitationem magnam beatae adipisci perferendis? Explicabo modi, expedita similique non tempore libero illum." bot />
             <Bubble content="Hello, Can I get some help?" />
             <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure." bot />
-            <Sources content="Sources?" />
+            <Sources content={["https://en.wikipedia.org/wiki/TikTok", "Lucy | Adobe (@lugidesign) | TikTok", "How Large Language Models work"]} />
             
             <Message />
         </div>

@@ -3,17 +3,17 @@ import React from 'react';
 import "./Sources.css";
 
 const Sources = (props) => {
-    const contents = props.content;
+    const links = props.link;
     return (
         <div className='comp-sources'>
             <details className='inner-bubble'>
                 <summary>
                     Sources:
                 </summary>
-                {contents.map((content) => (
+                {links.map((link) => (
                     <div className='source'>
-                        <img height="16" width="16" src={"https://icons.duckduckgo.com/ip3/" + new URL(content).hostname + ".ico"} />
-                        <a href={content} target="_blank">{content}</a>
+                        <img height="16" width="16" src={"https://icons.duckduckgo.com/ip3/" + new URL(link).hostname + ".ico"} />
+                        <a href={link} target="_blank">{link}</a>
                     </div>
                 ))}
             </details>

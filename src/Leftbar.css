@@ -6,9 +6,6 @@
     flex-direction: column;
     color-scheme: dark;
 }
-.comp-leftbar .title{
-    font-size: 3em;
-}
 .comp-leftbar .inner{
     padding: 16px 24px;
     flex-grow: 1;

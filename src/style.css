@@ -15,12 +15,15 @@
     --history-pressed-color: #3F4348;
     --bot-bubble-bg-color: #f4f5f8;
     --bot-copyicon-border-color: #E3E3E3;
+    --rightbar-input-border-color: #DCDFE8;
 
     --text-size-number: 0.0625rem;
 
     --text-size-12: calc(var(--text-size-number) * 12);
+    --text-size-14: calc(var(--text-size-number) * 14);
     --text-size-15: calc(var(--text-size-number) * 15);
     --text-size-16: calc(var(--text-size-number) * 16);
+    --text-size-24: calc(var(--text-size-number) * 24);
 }
 
 body {

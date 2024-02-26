@@ -2,7 +2,6 @@
     padding: 24px 40px;
     position: fixed;
     bottom: 0px;
-    /* top: calc(100vh - 40px); */
     width: calc(100% - 488px);
     transition: width 300ms ease-in-out 0s;
 }

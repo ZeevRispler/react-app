@@ -14,7 +14,7 @@
 }
 
 .comp-sources .inner-bubble {
-    padding: 32px;
+    padding: 8px 32px;
     width: 100%;
     border-radius: 16px 16px 0 16px;
     background-color: var(--bot-bubble-bg-color);
@@ -89,6 +89,7 @@
     align-items: center;
     width: 100%;
     margin-left: 24px;
+    margin-bottom: 12px;
 }
 .comp-sources .source a{
     width: 100%;

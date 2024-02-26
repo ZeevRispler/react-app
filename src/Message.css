@@ -25,3 +25,9 @@
     font-size: var(--text-size-16);
     color: var(--text-color);
 }
+@media screen and (max-width: 480px) {
+    .comp-message{
+        width: calc(100% - 48px);
+        padding: 24px;
+    }
+}

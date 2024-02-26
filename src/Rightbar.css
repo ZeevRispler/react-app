@@ -5,6 +5,13 @@
     max-width: calc(300px - 48px);
     padding: 16px 24px;
     position: relative;
+    transition: min-width 300ms ease-in-out 0s, max-width 300ms ease-in-out 0s, padding 300ms ease-in-out 0s;
+    
+}
+.comp-rightbar.open{
+    min-width: 0;
+    max-width: 0;
+    padding: 16px 0;
 }
 .comp-rightbar .title{
     font-size: var(--text-size-24);

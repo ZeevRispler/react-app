@@ -8,8 +8,8 @@ import Slider from "./Slider";
 
 const Rightbar = (props) => {
     return (
-        <div className='comp-rightbar'>
-            <div className="indicator"></div>
+        <div className='comp-rightbar open'>
+            <div className="indicator" onClick={() => event.target.parentElement.classList.toggle("open")}></div>
             <div className='title'>Properties</div>
             <Paragraph header="Paragraph component" content="Bibendum vehicula aenean parturient blandit aliquam. Amet ipsum turpis integer gravida pulvinar aenean dictumst faucibus." />
             <Input header="Input component" content="Please type name" placetext="Placeholder only" />

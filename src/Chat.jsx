@@ -9,7 +9,7 @@ const Chat = (props) => {
     return (
         <div className='comp-chat'>
             <Bubble content="Hello, Can I get some help?" />
-            <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure. Exercitationem magnam beatae adipisci perferendis? Explicabo modi, expedita similique non tempore libero illum." bot />
+            <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure. Exercitationem magnam beatae adipisci perferendis." bot />
             <Bubble content="Hello, Can I get some help?" />
             <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure." bot />
             <Sources link={["https://en.wikipedia.org/wiki/TikTok", "https://www.tiktok.com/@lugidesign", "https://medium.com/data-science-at-microsoft/how-large-language-models-work-91c362f5b78f"]} />

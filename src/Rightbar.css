@@ -4,9 +4,23 @@
     min-width: calc(300px - 48px);
     max-width: calc(300px - 48px);
     padding: 16px 24px;
+    position: relative;
 }
 .comp-rightbar .title{
     font-size: var(--text-size-24);
     font-weight: 600;
     margin-bottom: 32px;
+}
+.comp-rightbar .indicator{
+    position: absolute;
+    top: calc(50% - 20px);
+    left: -12px;
+    width: 6px;
+    height: 40px;
+    border-radius: 9999px;
+    cursor: pointer;
+    background-color: var(--rightbar-input-border-color);
+}
+.comp-rightbar .indicator:hover{
+    background-color: var(--search-text-color);
 }

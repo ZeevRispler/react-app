@@ -18,6 +18,11 @@
 .comp-slider .slidecontainer {
     width: 100%;
 }
+.comp-slider .slider-flex{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
 
 .comp-slider .slider {
     -webkit-appearance: none;
@@ -62,7 +67,7 @@
     color: var(--leftbar-text-color);
     border-radius: 4px;
     position: absolute;
-    bottom: 60px;
+    bottom: 24px;
     left: 0;
     transform: translate(-50%);
     display: flex;
@@ -77,7 +82,7 @@
 }
 
 .comp-slider input[type=number]{
-    width: calc(100% - 24px);
+    width: 32px;
     padding: 8px 12px;
     border: 1px solid var(--rightbar-input-border-color);
     border-radius: 8px;

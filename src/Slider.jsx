@@ -8,9 +8,12 @@ const Slider = (props) => {
         <div className='comp-slider'>
             <h3>{props.header}</h3>
             <p>{props.content}</p>
-            <input type="range" min={props.min} max={props.max} class="slider" value={slider} onChange={() => setSlider(event.target.value)}></input>
-            <div className='tooltip' style={{left:((slider-props.min)*(252/(props.max-props.min)))+"px"}}>{slider}</div>
-            <input type="number" className='slider-input' value={slider} onChange={() => setSlider(event.target.value)}/>
+            <div className='tooltip' style={{ left: ((slider - props.min) * (178 / (props.max - props.min))) + "px" }}>{slider}</div>
+
+            <div className="slider-flex">
+                <input type="range" min={props.min} max={props.max} className="slider" value={slider} onChange={() => setSlider(event.target.value)}></input>
+                <input type="number" className='slider-input' min={props.min} max={props.max} value={slider} onChange={() => setSlider(event.target.value)} />
+            </div>
         </div>
     )
 };

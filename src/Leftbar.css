@@ -4,6 +4,7 @@
     min-width: 400px;
     display: flex;
     flex-direction: column;
+    color-scheme: dark;
 }
 .comp-leftbar .title{
     font-size: 3em;

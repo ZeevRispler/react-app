@@ -83,11 +83,13 @@
     display: none;
     cursor: pointer;
 }
-.comp-bubble.true .copy-icon{
+
+.comp-bubble.true .copy-icon {
     display: block;
     opacity: 0;
 }
-.comp-bubble.true:hover .copy-icon{
+
+.comp-bubble.true:hover .copy-icon {
     opacity: 1;
 }
 
@@ -97,4 +99,12 @@
     padding: 4px;
     width: 16px;
     height: 16px;
+}
+
+@media screen and (max-width: 480px) {
+    .comp-bubble, .comp-bubble.true {
+        width: calc(100% - 24px);
+        margin-left: 12px;
+        margin-right: 12px;
+    }
 }

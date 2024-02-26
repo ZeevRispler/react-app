@@ -4,7 +4,8 @@
     display: flex;
     gap: 40px;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 140px);
     overflow: auto;
     position: relative;
+    padding-bottom: 140px;
 }

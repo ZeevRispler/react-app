@@ -1,8 +1,9 @@
 .comp-message {
     padding: 24px 40px;
-    position: sticky;
-    top: calc(100vh - 40px);
-    width: calc(100% - 80px);
+    position: fixed;
+    bottom: 0px;
+    /* top: calc(100vh - 40px); */
+    width: calc(100% - 784px);
 }
 
 .comp-message .input {

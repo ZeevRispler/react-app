@@ -11,8 +11,11 @@ const Sources = (props) => {
                     Sources:
                 </summary>
                 {contents.map((content) => (
-                        <div><a href={content} target="_blank">{content}</a></div>
-                    ))}
+                    <div className='source'>
+                        <img height="16" width="16" src={"https://icons.duckduckgo.com/ip3/" + new URL(content).hostname + ".ico"} />
+                        <a href={content} target="_blank">{content}</a>
+                    </div>
+                ))}
             </details>
             <div className='help-text'>Was this helpful? <button>👍</button><button>👎</button></div>
         </div>

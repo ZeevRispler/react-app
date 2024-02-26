@@ -88,9 +88,15 @@
     gap: 8px;
     align-items: center;
     width: 100%;
+    margin-left: 24px;
 }
 .comp-sources .source a{
     width: 100%;
     height: 24px;
     overflow: hidden;
+    color: var(--link-text-color);
+    text-decoration: none;
+}
+.comp-sources .source a:hover{
+    text-decoration: underline;
 }

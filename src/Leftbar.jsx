@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import React from 'react';
 import Header from './Header';
-import Footer from './Footer';
+// import Footer from './Footer';
 import Search from './Search';
 import History from './History';
+import Button from './Button';
 import "./Leftbar.css";
 
 const Leftbar = (props) => {
@@ -16,7 +17,10 @@ const Leftbar = (props) => {
                 {/* TODO: Remove grouping for now. array should include topic + ID */}
                 {/* TODO: Footer is stupid, make button here, so it will be more dynamic */}
             </div>
-            <Footer />
+            <div class="footer-flex">
+                <Button label="New chat" />
+            </div>
+            {/* <Footer /> */}
         </div>
     )
 };

@@ -14,3 +14,10 @@
     flex-direction: column;
     overflow: auto;
 }
+
+.comp-leftbar .footer-flex{
+    padding: 24px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--search-bg-color);
+}

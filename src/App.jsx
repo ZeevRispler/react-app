@@ -11,6 +11,7 @@ const App = () => {
             <Leftbar />
             <Chat />
             <Rightbar />
+            {/* TODO: Make a sub-directory for components, App should be left out */}
         </div>
     );
 };

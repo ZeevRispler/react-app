@@ -12,9 +12,11 @@ const Leftbar = (props) => {
             <Header />
             <div className="inner">
                 <Search />
-                <History summary="Last 30 days" history={["Trying to Help with Something", "A Question about Timing", "Drink More Water", "Trying to Help with Something", "A Question about Timing"]} />
+                <History summary="Today" history={["Trying to Help with Something", "A Question about Timing", "Drink More Water", "Trying to Help with Something", "A Question about Timing"]} />
                 <History summary="January 2024" history={["Drink More Water", "Trying to Help with Something", "A Question about Timing", "Drink More Water", "Trying to Help with Something", "A Question about Timing", "Drink More Water"]} />
                 <History summary="December 2023" history={["Trying to Help with Something", "A Question about Timing", "Drink More Water", "Trying to Help with Something", "A Question about Timing"]} />
+                {/* TODO: Remove grouping for now. array should include topic + ID */}
+                {/* TODO: Footer is stupid, make button here, so it will be more dynamic */}
             </div>
             <Footer />
         </div>

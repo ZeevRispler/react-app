@@ -9,6 +9,7 @@ const Message = (props) => {
             <div className="input">
                 <input type='text' placeholder='Send message...' />
                 <Button label="Send" />
+                {/* TODO: Add a mic icon, and a plus icon */}
             </div>
         </div>
     )

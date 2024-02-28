@@ -17,6 +17,7 @@ const Header = (props) => {
                 </svg>
             </div>
         </div>
+        // TODO: Add Custom Logo - MLRun Chat.
     )
 };
 

@@ -31,6 +31,8 @@ const Chat = (props) => {
             <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure." bot />
             <Sources link={["https://en.wikipedia.org/wiki/TikTok", "https://www.tiktok.com/@lugidesign", "https://medium.com/data-science-at-microsoft/how-large-language-models-work-91c362f5b78f"]} />
 
+            {/* TODO: Links should have titles, not just URLs */}
+
             <Message />
         </div>
     )

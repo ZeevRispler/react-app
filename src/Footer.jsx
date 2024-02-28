@@ -6,7 +6,7 @@ import Button from "./Button";
 const Footer = (props) => {
     return (
         <div className='comp-footer'>
-            <Button label="New chat" />
+            <Button label="New chat"/>
         </div>
     )
 };

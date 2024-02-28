@@ -11,7 +11,7 @@ const History = (props) => {
                 <div className="inner-flex">
                     {histories.map((history) => (
                         <button>{history}</button>
-                        // TODO: Login icon sould open a menu (like in Figma)
+                        // TODO: Login icon should open a menu (like in Figma)
                         // TODO: Add elipsis icon for menu with 'Delete', 'Archive', 'Export-to-PDF'
                     ))}
                 </div>

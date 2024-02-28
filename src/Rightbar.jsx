@@ -15,6 +15,7 @@ const Rightbar = (props) => {
             <Input header="Input component" content="Please type name" placetext="Placeholder only" />
             <Textarea header="Textarea component" content="Please type description" placetext="Placeholder only" />
             <Slider header="Slider component" content="Values are between 1 and 18" min="1" max="18" />
+            {/* Button for collapse looks too much like scrollbar */}
         </div>
     )
 };

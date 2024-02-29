@@ -3,6 +3,7 @@ import React from 'react';
 import "./Bubble.css";
 import IconBot from "./IconBot";
 import IconHuman from "./IconHuman";
+import Sources from "./Sources";
 
 const Bubble = (props) => {
     return (
@@ -11,8 +12,13 @@ const Bubble = (props) => {
                 ? <IconBot />
                 : <IconHuman />
             }
-            <div className='inner-bubble'>{props.content}</div>
-            {props.bot ? <div className='help-text'>Was this helpful? <button>👍</button><button>👎</button></div> : <div className='help-text'></div>}
+            <div className="flex-column">
+                <div className='inner-bubble'>{props.content}</div>
+                {props.bot ? <div className='help-text'>Was this helpful? <button>👍</button><button>👎</button></div> : <div className='help-text'></div>}
+
+                {props.source ? <Sources source={props.source} /> : <div></div>}
+            </div>
+
 
             <button className='copy-icon' onClick={() => {
                 navigator.clipboard.writeText(props.content);

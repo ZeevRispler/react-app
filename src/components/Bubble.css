@@ -14,12 +14,19 @@
     margin-left: 40px;
     margin-right: 140px;
 }
+.comp-bubble .flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+    width: 100%;
+}
 
 .comp-bubble .inner-bubble {
     background-color: var(--button-bg-color);
     color: var(--leftbar-text-color);
     padding: 32px;
-    width: 100%;
+    width: calc(100% - 64px);
     border-radius: 16px 16px 0 16px;
 }
 

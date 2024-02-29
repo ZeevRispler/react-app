@@ -26,7 +26,6 @@ const Bubble = (props) => {
             }}></button>
 
             {/* TODO: Add 'suggest' icon, to open popup w alternative text input */}
-            {/* TODO: Sources is irrelevant, make bubble hold all kinds of data */}
         </div>
     )
 };

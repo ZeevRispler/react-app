@@ -18,7 +18,6 @@ const Leftbar = (props) => {
             <div class="footer-flex">
                 <Button label="New chat" />
             </div>
-            {/* <Footer /> */}
         </div>
     )
 };

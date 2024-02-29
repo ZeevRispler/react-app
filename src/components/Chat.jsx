@@ -2,7 +2,6 @@ import { useState } from 'react';
 import React from 'react';
 import "./Chat.css";
 import Bubble from "./Bubble";
-import Sources from "./Sources";
 import Message from "./Message";
 import Search from "./Search";
 import Button from "./Button";

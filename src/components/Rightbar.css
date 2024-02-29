@@ -19,13 +19,28 @@
 }
 .comp-rightbar .indicator{
     position: absolute;
-    top: calc(50% - 20px);
-    left: -12px;
-    width: 6px;
-    height: 40px;
+    top: 40px;
+    left: -24px;
+    width: 32px;
+    height: 32px;
     border-radius: 9999px;
     cursor: pointer;
     background-color: var(--rightbar-input-border-color);
+    background-repeat: no-repeat;
+    background-position: 45% 50%;
+    background-size: 16px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>');
+    display: block;
+    transform: rotate(0deg);
+    transition: left 300ms linear 0s, transform 300ms linear 0s;
+}
+.comp-rightbar:hover .indicator{
+    display: block !important;
+}
+.comp-rightbar.open .indicator{
+    display: none;
+    left: -16px;
+    transform: rotate(180deg);
 }
 .comp-rightbar .indicator:hover{
     background-color: var(--search-text-color);

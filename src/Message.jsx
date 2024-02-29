@@ -8,6 +8,7 @@ const Message = (props) => {
         <div className='comp-message'>
             <div className="input">
                 <input type='text' placeholder='Send message...' />
+                <div className="mic-icon"></div>
                 <Button label="Send" />
                 {/* TODO: Add a mic icon, and a plus icon */}
             </div>

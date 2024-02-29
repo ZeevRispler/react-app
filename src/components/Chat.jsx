@@ -32,11 +32,6 @@ const Chat = (props) => {
                 <Bubble content={chatHistory.content} bot={chatHistory.role} source={chatHistory.sources} />
             ))}
 
-            {/* <Bubble content="Hello, Can I get some help?" />
-            <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure. Exercitationem magnam beatae adipisci perferendis." bot />
-            <Bubble content="Hello, Can I get some help?" />
-            <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure." source={[{ title: "Tiktok - Wikipedia", link: "https://en.wikipedia.org/wiki/TikTok" }, {title: "TikTok - Make Your Day", link: "https://www.tiktok.com/@lugidesign"}, {title: "How Large Language Models Work. From zero to ChatGPT", link: "https://medium.com/data-science-at-microsoft/how-large-language-models-work-91c362f5b78f"}]} bot /> */}
-
             <Message />
         </div>
     )

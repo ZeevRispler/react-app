@@ -12,7 +12,6 @@ const Chat = (props) => {
     const chatHistories = Data.history;
     return (
         <div className='comp-chat'>
-            {console.log(Data)}
             <details className="mobile-menu">
                 <summary>
                     <div className="icon-button">
@@ -30,7 +29,7 @@ const Chat = (props) => {
             </details>
 
             {chatHistories.map((chatHistory) => (
-                <Bubble content={chatHistory.content} bot={chatHistory.role} />
+                <Bubble content={chatHistory.content} bot={chatHistory.role} source={chatHistory.sources} />
             ))}
 
             {/* <Bubble content="Hello, Can I get some help?" />

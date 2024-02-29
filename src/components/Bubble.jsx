@@ -16,6 +16,7 @@ const Bubble = (props) => {
                 <div className='inner-bubble'>{props.content}</div>
                 {props.bot == 'AI' ? <div className='help-text'>Was this helpful? <button>👍</button><button>👎</button></div> : <div className='help-text'></div>}
 
+                {console.log(props.source)}
                 {props.source ? <Sources source={props.source} /> : <div></div>}
             </div>
 

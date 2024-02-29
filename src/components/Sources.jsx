@@ -12,8 +12,8 @@ const Sources = (props) => {
                 </summary>
                 {sources.map((source) => (
                     <div className='source'>
-                        <img height="16" width="16" src={"https://icons.duckduckgo.com/ip3/" + new URL(source.link).hostname + ".ico"} />
-                        <a href={source.link} target="_blank">{source.title}</a>
+                        <img height="16" width="16" src={"https://icons.duckduckgo.com/ip3/" + new URL(source.source).hostname + ".ico"} />
+                        <a href={source.source} target="_blank">{source.title}</a>
                     </div>
                 ))}
             </details>

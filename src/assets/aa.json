@@ -1,0 +1,48 @@
+{
+      "session_id": "30a933a24ded4d2eb893570f2ada2bd1",
+      "username": "yhaviv@gmail.com",
+      "history": [
+        {
+          "role": "Human",
+          "content": "which mobile plans exist"
+        },
+        {
+          "role": "AI",
+          "content": "The available mobile plans include the New Freedom plans, which offer unlimited local and international calls on select plans. The eligible countries for Flexi minutes calls vary depending on the plan. For more information on the eligible countries, please refer to the provided sources.\n",
+          "sources": [
+            {
+              "title": "New Freedom Plans",
+              "source": "https://www.etisalat.ae/en/consumer/mobile/mobile-plans/new-freedom-plans.jsp"
+            },
+            {
+              "title": "Eligible Countries",
+              "source": "https://www.etisalat.ae/en/consumer/mobile/mobile-plans/new-freedom-plans.jsp"
+            }
+          ]
+        },
+        {
+          "role": "Human",
+          "content": "and for roaming"
+        },
+        {
+          "role": "AI",
+          "content": "The available mobile plans for roaming are as follows:\n\n1. Emirati Freedom 1500 Plan:\n- 40GB Data roaming at full speed\n- 3000 minutes for outgoing calls while roaming\n- 500 minutes for receiving calls while roaming in GCC or Rest of the world.\n\n2. Emirati Freedom 250 Plan:\n- 20GB Data Roaming\n- 1000 local minutes for outgoing roaming calls\n- 500 minutes for receiving calls while roaming in GCC countries.\n\n3. Emirati Freedom 275 Plan:\n- Roam Like Home in GCC countries.\n\n4. Emirati Freedom 400 Plan:\n- Roam Like Home in GCC countries.\n\n5. Emirati Freedom 450 Plan:\n- Roam Like Home in GCC countries.\n\n6. Emirati Freedom 750 Plan:\n- Roam Like Home in GCC countries.\n\n7. Emirati Freedom 850 Plan:\n- Roam Like Home in GCC countries.\n\n8. Emirati Freedom 1500 Plan:\n- Roam Like Home in GCC countries + Rest of the world.\n\n"
+        },
+        {
+          "role": "Human",
+          "content": "which plan has unlimited data"
+        },
+        {
+          "role": "AI",
+          "content": "The New Freedom 500 Gold Data Plan offers unlimited data.\n"
+        }
+      ],
+      "topic": null,
+      "state": {
+
+      },
+      "annotations": null,
+      "features": null,
+      "created_time": "2024-02-13T13:07:57.599231",
+      "last_update": "2024-02-13T13:26:30.258954"
+}

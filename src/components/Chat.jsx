@@ -5,11 +5,14 @@ import Bubble from "./Bubble";
 import Sources from "./Sources";
 import Message from "./Message";
 import Search from "./Search";
-import Button from "./Button"
+import Button from "./Button";
+import Data from './../assets/aa.json';
 
 const Chat = (props) => {
+    const chatHistories = Data.history;
     return (
         <div className='comp-chat'>
+            {console.log(Data)}
             <details className="mobile-menu">
                 <summary>
                     <div className="icon-button">
@@ -25,10 +28,15 @@ const Chat = (props) => {
                     <Button label="New Chat" />
                 </div>
             </details>
-            <Bubble content="Hello, Can I get some help?" />
+
+            {chatHistories.map((chatHistory) => (
+                <Bubble content={chatHistory.content} bot={chatHistory.role} />
+            ))}
+
+            {/* <Bubble content="Hello, Can I get some help?" />
             <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure. Exercitationem magnam beatae adipisci perferendis." bot />
             <Bubble content="Hello, Can I get some help?" />
-            <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure." source={[{ title: "Tiktok - Wikipedia", link: "https://en.wikipedia.org/wiki/TikTok" }, {title: "TikTok - Make Your Day", link: "https://www.tiktok.com/@lugidesign"}, {title: "How Large Language Models Work. From zero to ChatGPT", link: "https://medium.com/data-science-at-microsoft/how-large-language-models-work-91c362f5b78f"}]} bot />
+            <Bubble content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sequi quis cupiditate voluptas soluta fugit iste iure." source={[{ title: "Tiktok - Wikipedia", link: "https://en.wikipedia.org/wiki/TikTok" }, {title: "TikTok - Make Your Day", link: "https://www.tiktok.com/@lugidesign"}, {title: "How Large Language Models Work. From zero to ChatGPT", link: "https://medium.com/data-science-at-microsoft/how-large-language-models-work-91c362f5b78f"}]} bot /> */}
 
             <Message />
         </div>

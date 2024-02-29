@@ -9,7 +9,7 @@
     position: relative;
 }
 
-.comp-bubble.true {
+.comp-bubble.AI {
     flex-direction: row;
     margin-left: 40px;
     margin-right: 140px;
@@ -30,7 +30,7 @@
     border-radius: 16px 16px 0 16px;
 }
 
-.comp-bubble.true .inner-bubble {
+.comp-bubble.AI .inner-bubble {
     background-color: var(--bot-bubble-bg-color);
     color: var(--text-color);
     border-radius: 16px 16px 16px 0;
@@ -49,7 +49,7 @@
     height: fit-content;
 }
 
-.comp-bubble.true svg {
+.comp-bubble.AI svg {
     color: var(--text-color);
 }
 
@@ -98,12 +98,12 @@
     background-size: 20px;
 }
 
-.comp-bubble.true .copy-icon {
+.comp-bubble.AI .copy-icon {
     display: block;
     opacity: 0;
 }
 
-.comp-bubble.true:hover .copy-icon {
+.comp-bubble.AI:hover .copy-icon {
     opacity: 1;
 }
 
@@ -116,7 +116,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .comp-bubble, .comp-bubble.true {
+    .comp-bubble, .comp-bubble.AI {
         width: calc(100% - 24px);
         margin-left: 12px;
         margin-right: 12px;

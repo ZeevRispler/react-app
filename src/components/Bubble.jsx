@@ -8,13 +8,13 @@ import Sources from "./Sources";
 const Bubble = (props) => {
     return (
         <div className={'comp-bubble ' + props.bot}>
-            {props.bot
+            {props.bot == 'AI'
                 ? <IconBot />
                 : <IconHuman />
             }
             <div className="flex-column">
                 <div className='inner-bubble'>{props.content}</div>
-                {props.bot ? <div className='help-text'>Was this helpful? <button>👍</button><button>👎</button></div> : <div className='help-text'></div>}
+                {props.bot == 'AI' ? <div className='help-text'>Was this helpful? <button>👍</button><button>👎</button></div> : <div className='help-text'></div>}
 
                 {props.source ? <Sources source={props.source} /> : <div></div>}
             </div>

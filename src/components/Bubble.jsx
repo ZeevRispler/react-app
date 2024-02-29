@@ -15,14 +15,11 @@ const Bubble = (props) => {
             {props.bot ? <div className='help-text'>Was this helpful? <button>👍</button><button>👎</button></div> : <div className='help-text'></div>}
 
             <button className='copy-icon' onClick={() => {
-                    navigator.clipboard.writeText(props.content);
-            }}>
+                navigator.clipboard.writeText(props.content);
+            }}></button>
 
-                {/* TODO: Add 'suggest' icon, to open popup w alternative text input */}
-                {/* TODO: Sources is irrelevant, make bubble hold all kinds of data */}
-                {/* TODO: SVG should be external */}
-
-            </button>
+            {/* TODO: Add 'suggest' icon, to open popup w alternative text input */}
+            {/* TODO: Sources is irrelevant, make bubble hold all kinds of data */}
         </div>
     )
 };

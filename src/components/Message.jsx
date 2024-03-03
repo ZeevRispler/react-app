@@ -1,10 +1,10 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import React from 'react';
 import "./Message.css";
 import Button from "./Button"
 import MockClient from './../Mock.ts'
 
-const Message = ({setter}) => {
+const Message = ({ setter }) => {
     const [inputValue, setInputValue] = useState('');
 
     const submitMessage = async () => {
@@ -17,13 +17,14 @@ const Message = ({setter}) => {
             ...prevMessages.slice(0, -1),
             { role: 'AI', content: result.answer, sources: result.sources }
         ]);
-
+        var lastBubble = document.getElementsByClassName("help-text").length - 1;
+        document.getElementsByClassName("help-text")[lastBubble].scrollIntoView(false);
     };
 
     const handleKeyPress = (e) => {
         if (e.key === 'Enter' && !e.shiftKey) {
-          e.preventDefault(); // Prevent the default action to avoid adding a new line
-          submitMessage();
+            e.preventDefault(); // Prevent the default action to avoid adding a new line
+            submitMessage();
         }
     };
 
@@ -31,7 +32,7 @@ const Message = ({setter}) => {
     return (
         <div className='comp-message'>
             <div className="input">
-            <div className="icon-button plus-icon"></div>
+                <div className="icon-button plus-icon"></div>
                 <input
                     type='text'
                     placeholder='Send message...'

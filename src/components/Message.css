@@ -1,8 +1,9 @@
 .comp-message {
     padding: 24px 40px;
-    position: fixed;
-    bottom: 0px;
-    width: calc(100% - 488px);
+    /* position: fixed;
+    bottom: 0px; */
+    /* width: calc(100% - 488px); */
+    width: 100%;
     transition: width 300ms ease-in-out 0s;
 }
 

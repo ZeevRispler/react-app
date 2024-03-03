@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import React from 'react';
 import "./Chat.css";
 import Bubble from "./Bubble";
@@ -36,11 +36,15 @@ const Chat = (props) => {
                 </div>
             </details>
 
-            {messages.map((chatHistory) => (
-                <Bubble content={chatHistory.content} bot={chatHistory.role} source={chatHistory.sources} />
-            ))}
+            <div className="chat-flex">
+                <div className="bubbles-flex">
+                    {messages.map((chatHistory) => (
+                        <Bubble content={chatHistory.content} bot={chatHistory.role} source={chatHistory.sources} />
+                    ))}
+                </div>
 
-            <Message setter={setMessages}/>
+                <Message setter={setMessages} />
+            </div>
         </div>
     )
 };

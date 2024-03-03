@@ -3,12 +3,12 @@
     /* position: fixed;
     bottom: 0px; */
     /* width: calc(100% - 488px); */
-    width: 100%;
+    width: calc(100% - 80px);
     transition: width 300ms ease-in-out 0s;
 }
 
 body:has(.open) .comp-message {
-    width: calc(100% - 784px);
+    /* width: calc(100% - 784px); */
 }
 
 .comp-message .input {

@@ -1,14 +1,23 @@
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 import React from 'react';
 import "./Chat.css";
 import Bubble from "./Bubble";
 import Message from "./Message";
 import Search from "./Search";
 import Button from "./Button";
-import Data from './../assets/aa.json';
+import MockClient from './../Mock.ts'
 
 const Chat = (props) => {
-    const chatHistories = Data.history;
+    const [messages, setMessages] = useState([]);
+
+    useEffect(() => {
+        async function fetchData() {
+            const chatSession = await MockClient.getSession();
+            setMessages(chatSession.history);
+        }
+        fetchData();
+    }, []);
+
     return (
         <div className='comp-chat'>
             <details className="mobile-menu">
@@ -27,11 +36,11 @@ const Chat = (props) => {
                 </div>
             </details>
 
-            {chatHistories.map((chatHistory) => (
+            {messages.map((chatHistory) => (
                 <Bubble content={chatHistory.content} bot={chatHistory.role} source={chatHistory.sources} />
             ))}
 
-            <Message />
+            <Message setter={setMessages}/>
         </div>
     )
 };

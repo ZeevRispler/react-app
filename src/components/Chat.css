@@ -88,4 +88,7 @@
     .mobile-menu {
         display: block;
     }
+    .comp-chat .bubble-flex{
+        overflow-x: hidden;
+    }
 }

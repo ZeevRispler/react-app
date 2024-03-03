@@ -4,10 +4,6 @@
     transition: width 300ms ease-in-out 0s;
 }
 
-body:has(.open) .comp-message {
-    /* width: calc(100% - 784px); */
-}
-
 .comp-message .input {
     width: calc(100% - 32px);
     display: flex;

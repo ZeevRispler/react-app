@@ -11,14 +11,16 @@ const Message = ({ setter }) => {
         console.log('inputValue:', inputValue);
         setter(prevMessages => [...prevMessages, { role: 'Human', content: inputValue, sources: null }]);
         setInputValue('');
+        setTimeout(function () {
+            var lastBubble = document.getElementsByClassName("help-text").length - 1;
+            document.getElementsByClassName("help-text")[lastBubble].scrollIntoView(false);
+        }, 50);
         setter(prevMessages => [...prevMessages, { role: 'AI', content: 'Thinking...', sources: null }]);
         const result = await MockClient.submitQuery('id', inputValue);
         setter(prevMessages => [
             ...prevMessages.slice(0, -1),
             { role: 'AI', content: result.answer, sources: result.sources }
         ]);
-        var lastBubble = document.getElementsByClassName("help-text").length - 1;
-        document.getElementsByClassName("help-text")[lastBubble].scrollIntoView(false);
     };
 
     const handleKeyPress = (e) => {

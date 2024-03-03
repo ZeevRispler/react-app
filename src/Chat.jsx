@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import React from 'react';
 import "./Chat.css";
-import Bubble from "./Bubble";
-import Message from "./Message";
-import Search from "./Search";
-import Button from "./Button";
-import MockClient from './../Mock.ts'
+import Bubble from "./components/Bubble";
+import Message from "./components/Message";
+import Search from "./components/Search";
+import Button from "./components/Button";
+import MockClient from './Mock'
 
 const Chat = (props) => {
     const [messages, setMessages] = useState([]);

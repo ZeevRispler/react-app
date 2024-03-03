@@ -1,8 +1,8 @@
 
 import { createRoot } from "react-dom/client";
-import Leftbar from "./components/Leftbar";
-import Rightbar from "./components/Rightbar";
-import Chat from "./components/Chat";
+import Leftbar from "./Leftbar";
+import Rightbar from "./Rightbar";
+import Chat from "./Chat";
 import "./App.css";
 
 const App = () => {

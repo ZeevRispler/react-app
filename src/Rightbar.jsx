@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import React from 'react';
 import "./Rightbar.css";
-import Paragraph from "./Paragraph";
-import Input from "./Input";
-import Textarea from "./Textarea";
-import Slider from "./Slider";
+import Paragraph from "./components/Paragraph";
+import Input from "./components/Input";
+import Textarea from "./components/Textarea";
+import Slider from "./components/Slider";
 
 const Rightbar = (props) => {
     return (

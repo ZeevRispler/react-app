@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import React from 'react';
-import Header from './Header';
+import Header from './components/Header';
 // import Search from './Search';
-import History from './History';
-import Button from './Button';
+import History from './components/History';
+import Button from './components/Button';
 import "./Leftbar.css";
 
 const Leftbar = (props) => {

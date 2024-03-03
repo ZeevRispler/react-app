@@ -1,11 +1,15 @@
 .comp-sources {
-    display: flex;
+    display: none;
     gap: 8px;
     align-items: flex-end;
     flex-direction: row-reverse;
     width: 100%;
     position: relative;
     flex-direction: row;
+}
+
+.comp-sources:has(.source){
+    display: flex;
 }
 
 .comp-sources .inner-bubble {

@@ -69,14 +69,19 @@
     font-weight: 400;
     cursor: pointer;
 }
-.comp-chat .chat-flex{
+
+.comp-chat .chat-flex {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-.comp-chat .bubbles-flex{
+
+.comp-chat .bubbles-flex {
     flex-grow: 1;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 @media screen and (max-width: 480px) {

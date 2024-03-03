@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import React from 'react';
 import "./Message.css";
 import Button from "./Button"
-import MockClient from './../Mock.ts'
+import Client from './../services/Api.ts'
 
 const Message = ({ setter }) => {
     const [inputValue, setInputValue] = useState('');
@@ -16,7 +16,7 @@ const Message = ({ setter }) => {
             document.getElementsByClassName("help-text")[lastBubble].scrollIntoView(false);
         }, 50);
         setter(prevMessages => [...prevMessages, { role: 'AI', content: 'Thinking...', sources: null }]);
-        const result = await MockClient.submitQuery('id', inputValue);
+        const result = await Client.submitQuery('id', inputValue);
         setter(prevMessages => [
             ...prevMessages.slice(0, -1),
             { role: 'AI', content: result.answer, sources: result.sources }

@@ -5,14 +5,14 @@ import Bubble from "./components/Bubble";
 import Message from "./components/Message";
 import Search from "./components/Search";
 import Button from "./components/Button";
-import MockClient from './Mock'
+import Client from './services/Api'
 
 const Chat = (props) => {
     const [messages, setMessages] = useState([]);
 
     useEffect(() => {
         async function fetchData() {
-            const chatSession = await MockClient.getSession();
+            const chatSession = await Client.getSession();
             setMessages(chatSession.history);
         }
         fetchData();

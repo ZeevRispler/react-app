@@ -1,4 +1,4 @@
-import Data from './assets/aa.json';
+import Data from '../assets/aa.json';
 
 class MockClient {
 
@@ -20,4 +20,4 @@ class MockClient {
   }
 }
 
-export default new MockClient();
+export default MockClient;

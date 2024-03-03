@@ -3,7 +3,7 @@ import React from 'react';
 import "./Slider.css";
 
 const Slider = (props) => {
-    const [slider, setSlider] = useState(18);
+    const [slider, setSlider] = useState(props.max);
     return (
         <div className='comp-slider'>
             <h3>{props.header}</h3>

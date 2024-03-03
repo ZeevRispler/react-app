@@ -9,8 +9,7 @@
       },
       {
         "role": "AI",
-        "content": "I don't know.\n",
-        "sources": []
+        "content": "I don't know.\n"
       },
       {
         "role": "Human",

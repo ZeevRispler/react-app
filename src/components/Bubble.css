@@ -38,6 +38,10 @@
     line-height: 150%;
 }
 
+.comp-bubble .inner-bubble p{
+    margin: 0;
+}
+
 .comp-bubble svg {
     width: 32px;
     height: 32px;

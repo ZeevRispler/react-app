@@ -46,6 +46,12 @@
     margin-top: 12px;
     max-width: 98%;
 }
+.comp-bubble .inner-bubble img[src="/assets/thinking.gif"]{
+    height: 25px;
+}
+.comp-bubble .inner-bubble:has(img[src="/assets/thinking.gif"]){
+    padding: 22px 32px;
+}
 
 .comp-bubble svg {
     width: 32px;

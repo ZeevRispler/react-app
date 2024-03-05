@@ -41,6 +41,10 @@
 .comp-bubble .inner-bubble p{
     margin: 0;
 }
+.comp-bubble .inner-bubble img{
+    border-radius: 6px;
+    margin-top: 12px;
+}
 
 .comp-bubble svg {
     width: 32px;

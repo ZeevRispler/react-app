@@ -5,6 +5,10 @@ import Header from './components/Header';
 import History from './components/History';
 import Button from './components/Button';
 import "./Leftbar.css";
+import MockClient from './Mock.ts'
+
+const func = MockClient.listSessions
+const arr =  await func()
 
 const Leftbar = (props) => {
     return (
@@ -12,7 +16,7 @@ const Leftbar = (props) => {
             <Header />
             <div className="inner">
                 {/* <Search /> */}
-                <History history={[{ topic: "Trying to Help with Something", id: 0 }, { topic: "A Question about Timing", id: 1 }, { topic: "Drink More Water", id: 2 }, { topic: "Trying to Help with Something", id: 3 }, { topic: "A Question about Timing", id: 4 }, { topic: "Trying to Help with Something", id: 5 }, { topic: "A Question about Timing", id: 6 }, { topic: "Drink More Water", id: 2 }, { topic: "Trying to Help with Something", id: 7 }, { topic: "A Question about Timing", id: 8 }, { topic: "Trying to Help with Something", id: 0 }, { topic: "A Question about Timing", id: 9 }, { topic: "Drink More Water", id: 10 }, { topic: "Trying to Help with Something", id: 11 }, { topic: "A Question about Timing", id: 12 }]} />
+                <History history={arr} />
             </div>
             <div class="footer-flex">
                 <Button label="New chat" />

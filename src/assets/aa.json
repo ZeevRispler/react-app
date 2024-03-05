@@ -9,7 +9,7 @@
       },
       {
         "role": "AI",
-        "content": "I don't know.\n"
+        "content": "I don't know.\n\n ![Loona toy robot](/assets/robot.jpg)"
       },
       {
         "role": "Human",

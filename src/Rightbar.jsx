@@ -14,7 +14,7 @@ const Rightbar = (props) => {
             <div className='title'>Properties</div>
             <div className="inner-elements">
                 <Paragraph header="Paragraph component" content="Bibendum vehicula aenean parturient blandit aliquam. Amet ipsum turpis integer gravida pulvinar aenean dictumst faucibus." />
-                <Dropdown header="Dropdown component" content="Please select company" option={["First option", "Second", "Third option", "Last one"]} />
+                <Dropdown header="Dropdown component" content="Please select company" option={["Apple", "Samsung", "OnePlus", "Google", "Xiaomi"]} />
                 <Input header="Input component" content="Please type name" placetext="Placeholder only" />
                 <Textarea header="Textarea component" content="Please type description" placetext="Placeholder only" />
                 <Slider header="Slider component" content="Values are between 1 and 18" min="1" max="18" />

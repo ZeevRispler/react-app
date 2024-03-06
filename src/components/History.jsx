@@ -11,7 +11,21 @@ const History = (props) => {
                 {histories.map((history) => (
                     <button>
                         {history.topic}
-                        <div className="icon-button"></div>
+                        <details>
+                            <summary>
+                                <div className="icon-button"></div>
+                            </summary>
+                            <div className="menu">
+                                <div className="menu-item">
+                                    <div className="menu-icon settings"></div>
+                                    Settings
+                                </div>
+                                <div className="menu-item">
+                                    <div className="menu-icon logout"></div>
+                                    Logout
+                                </div>
+                            </div>
+                        </details>
                     </button>
 
                     // TODO: Login icon should open a menu (like in Figma)

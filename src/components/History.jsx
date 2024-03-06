@@ -17,12 +17,16 @@ const History = (props) => {
                             </summary>
                             <div className="menu">
                                 <div className="menu-item">
-                                    <div className="menu-icon settings"></div>
-                                    Settings
+                                    <div className="menu-icon pdf"></div>
+                                    Export-to-PDF
                                 </div>
                                 <div className="menu-item">
-                                    <div className="menu-icon logout"></div>
-                                    Logout
+                                    <div className="menu-icon archive"></div>
+                                    Archive
+                                </div>
+                                <div className="menu-item">
+                                    <div className="menu-icon delete"></div>
+                                    Delete
                                 </div>
                             </div>
                         </details>

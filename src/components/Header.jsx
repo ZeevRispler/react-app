@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import React from 'react';
 import "./Header.css";
-import Logo from "./../assets/logo.png";
+import Logo from "./../assets/mlrun.png";
 
 const Header = (props) => {
     return (
@@ -17,7 +17,6 @@ const Header = (props) => {
                 </svg>
             </div>
         </div>
-        // TODO: Add Custom Logo - MLRun Chat.
     )
 };
 

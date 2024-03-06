@@ -15,6 +15,7 @@ const Message = ({ setter }) => {
             var lastBubble = document.getElementsByClassName("help-text").length - 1;
             document.getElementsByClassName("help-text")[lastBubble].scrollIntoView(false);
         }, 50);
+
         setter(prevMessages => [...prevMessages, { role: 'AI', content: 'Thinking...', sources: null }]);
         const result = await Client.submitQuery('id', inputValue);
         setter(prevMessages => [

@@ -11,9 +11,9 @@
     font-size: var(--text-size-14);
     margin: 0;
 }
-.comp-dropdown input{
-    width: calc(100% - 24px);
-    padding: 8px 12px;
+.comp-dropdown select{
+    width: 100%;
+    padding: 7px 12px;
     border: 1px solid var(--rightbar-input-border-color);
     border-radius: 8px;
     font-size: var(--text-size-14);
@@ -23,11 +23,11 @@
     margin-top: 8px;
 }
 
-.comp-dropdown input:focus{
+.comp-dropdown select:focus{
     outline: none;
     border: 1px solid var(--link-text-color);
 }
 
-.comp-dropdown input::placeholder{
+.comp-dropdown select::placeholder{
     color: var(--search-text-color);
 }

@@ -5,9 +5,11 @@ import Header from './components/Header';
 import History from './components/History';
 import Button from './components/Button';
 import "./Leftbar.css";
-import MockClient from './Mock.ts'
+import MockClient from './services/Mock.ts';
 
-const func = MockClient.listSessions
+const Mock = new MockClient
+const func = Mock.listSessions
+console.log(func);
 const arr =  await func()
 
 const Leftbar = (props) => {

@@ -51,6 +51,10 @@
 
 .comp-history details {
     position: relative;
+    visibility: hidden;
+}
+.comp-history button:hover details{
+    visibility: visible;
 }
 
 .comp-history .menu {

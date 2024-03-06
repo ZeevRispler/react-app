@@ -9,7 +9,6 @@ import MockClient from './services/Mock.ts';
 
 const Mock = new MockClient
 const func = Mock.listSessions
-console.log(func);
 const arr =  await func()
 
 const Leftbar = (props) => {

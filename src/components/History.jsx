@@ -18,7 +18,7 @@ const History = (props) => {
                             <div className="menu">
                                 <div className="menu-item">
                                     <div className="menu-icon pdf"></div>
-                                    Export-to-PDF
+                                    Export to PDF
                                 </div>
                                 <div className="menu-item">
                                     <div className="menu-icon archive"></div>
@@ -31,9 +31,6 @@ const History = (props) => {
                             </div>
                         </details>
                     </button>
-
-                    // TODO: Login icon should open a menu (like in Figma)
-                    // TODO: Add elipsis icon for menu with 'Delete', 'Archive', 'Export-to-PDF'
                 ))}
             </div>
         </div>
